@@ -30,7 +30,7 @@ main {
   top: 0;
   left: 0;
   width: var(--side-bar);
-  min-height: 400px;
+  min-height: 500px;
   height: 100vh;
 }
 .main_logo {
@@ -40,14 +40,24 @@ main {
   justify-content: center;
   align-items: center;
 }
+.menu_icons {
+  display: flex;
+}
 .menu_icons > ul {
-  /* font-size: 18px; */
+  font-size: 18px;
+  gap: 26px;
+  padding-right: 2rem;
+
   display: flex;
   flex-direction: column;
-  gap: 16px;
   justify-content: center;
   align-items: center;
 }
+
+.logout_icon {
+  font-size: 18px;
+}
+
 .searchbar_area {
   background-color: white;
   justify-content: center;
