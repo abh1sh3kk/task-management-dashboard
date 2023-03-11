@@ -271,8 +271,10 @@ main {
 .second-minor {
   background: #ffffff;
   border-radius: 20px;
-  background: #ffffff;
   padding: 15px;
+  gap: 36px;
+  height: 210px;
+  justify-content: center;
 
   display: flex;
   flex-direction: column;
@@ -292,15 +294,15 @@ main {
   padding: 10px 18px;
 }
 .selected {
-	color: rgb(97, 97, 97);
+  color: rgb(97, 97, 97);
 }
 .design-team {
-	font-weight: 700;
-	font-size: 20px;
+  font-weight: 700;
+  font-size: 20px;
 }
 .icon-people {
-	font-size: 26px;
-	color:rgb(97, 97, 97);
+  font-size: 26px;
+  color: rgb(97, 97, 97);
 }
 .minor-two {
   text-align: center;
@@ -347,7 +349,7 @@ main {
   gap: 8px;
 }
 .chart {
-  height: 200px;
+  height: 250px;
 }
 
 .label {
