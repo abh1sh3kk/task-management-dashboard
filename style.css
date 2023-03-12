@@ -33,6 +33,10 @@ main {
   min-height: 500px;
   height: 100vh;
 }
+.aside-active {
+  top: 0;
+  left: 0;
+}
 .main_logo {
   margin-top: 15px;
   font-size: 25px;
@@ -132,6 +136,7 @@ main {
   font-size: 18px;
 }
 .burger_icon {
+  /* display: none; */
   font-size: 18px;
 }
 .navbar-topright-lists {
@@ -472,15 +477,43 @@ ul {
     height: unset;
   }
 }
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 650px) {
   .account-holder {
     display: none;
-  }  
+  }
   .searchbar_area > i {
     display: none;
   }
   .searchbar_area > input {
     padding-left: 18px;
   }
-
+}
+@media only screen and (max-width: 550px) {
+  .project-stats-list {
+    flex-wrap: wrap;
+  }
+  .navbar {
+    justify-content: center;
+    gap: 16px;
+  }
+  .navbar-topleft,
+  .searchbar_area {
+    flex: 1;
+  }
+  .top-major {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .searchbar {
+    width: 100%;
+    min-width: 94px;
+  }
+  .chart {
+    height: 200px;
+  }
+  .minor {
+    min-width: unset;
+  }
+}
+@media only screen and (max-width: 320px){
 }
