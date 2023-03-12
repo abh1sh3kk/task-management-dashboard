@@ -14,7 +14,7 @@ body {
   background-color: var(--soft-white);
 }
 main {
-  flex: 1;
+  margin-left: var(--side-bar);
 }
 .bg-purple {
   background-color: #1e0059;
@@ -119,7 +119,6 @@ margin-bottom: 15px;
 }
 .navbar {
   padding-inline: 25px;
-  margin-left: var(--side-bar);
 }
 .navbar-topleft {
   align-items: center;
@@ -138,7 +137,6 @@ margin-bottom: 15px;
 }
 
 .below-navbar {
-  margin-left: var(--side-bar);
   width: 92%;
   display: flex;
   justify-content: center;
@@ -158,6 +156,9 @@ margin-bottom: 15px;
   gap: 12px;
 }
 .project-stats-list > li {
+  font-weight: 600;
+  color:rgb(86, 86, 86);
+
   display: flex;
   gap: 15px;
   width: 100%;
