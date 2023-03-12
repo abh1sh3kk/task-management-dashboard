@@ -46,7 +46,6 @@ main {
 .menu_icons > ul {
   font-size: 18px;
   gap: 26px;
-  padding-right: 2rem;
 
   display: flex;
   flex-direction: column;
@@ -55,7 +54,7 @@ main {
 }
 
 .logout_icon {
-margin-bottom: 15px;
+  margin-bottom: 15px;
   font-size: 18px;
 }
 
@@ -100,7 +99,7 @@ margin-bottom: 15px;
   /* height: 100%; */
   /* flex: 1; */
   margin: 10px;
-  width: 958px;
+  max-width: 958px;
   background: #ffffff;
   padding: 15px;
 
@@ -118,18 +117,40 @@ margin-bottom: 15px;
   gap: 16px;
 }
 .navbar {
-  padding-inline: 25px;
+  padding: 16px 30px;
 }
 .navbar-topleft {
   align-items: center;
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 .navbar-topright {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  font-size: 18px;
 }
+.burger_icon {
+  font-size: 18px;
+}
+.navbar-topright-lists {
+  justify-content: space-around;
+  align-items: center;
+  gap: 18px;
+}
+
+.calendar-icon {
+  padding-right: 16px;
+  border-right: 2px solid grey;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .image-size {
   height: 30px;
   width: 30px;
@@ -137,7 +158,6 @@ margin-bottom: 15px;
 }
 
 .below-navbar {
-  width: 92%;
   display: flex;
   justify-content: center;
   min-height: 100vh;
@@ -157,7 +177,7 @@ margin-bottom: 15px;
 }
 .project-stats-list > li {
   font-weight: 600;
-  color:rgb(86, 86, 86);
+  color: rgb(86, 86, 86);
 
   display: flex;
   gap: 15px;
@@ -176,6 +196,10 @@ margin-bottom: 15px;
 
 .mid-major {
   width: 100%;
+}
+.top-major,
+.mid-major {
+  padding-inline: 12px;
 }
 
 /* BUTTON */
@@ -411,4 +435,52 @@ margin-bottom: 15px;
 .edit-icon {
   color: rgb(89, 89, 89);
   font-size: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .card {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar {
+    padding-inline: 20px;
+  }
+  .below-navbar {
+    flex-direction: column;
+    /* width: 90%; */
+  }
+  .aside-styles {
+    transform: translateX(calc(var(--side-bar) * -1));
+  }
+  main {
+    margin-inline: 16px;
+  }
+  .card {
+    width: auto;
+  }
+  .major {
+    width: 100%;
+    margin: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .second-minor {
+    height: unset;
+  }
+}
+@media only screen and (max-width: 650px){
+  .account-holder {
+    display: none;
+  }  
+  .searchbar_area > i {
+    display: none;
+  }
+  .searchbar_area > input {
+    padding-left: 18px;
+  }
+
 }
